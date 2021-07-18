@@ -1,0 +1,7 @@
+# Project exclude paths
+/target/
+.idea
+# Project exclude paths
+/Task1/target/
+/Task2/target/
+/Task3/target/
