@@ -7,7 +7,6 @@ import org.testng.annotations.Test;
 
 @Log4j2
 public class CharsTests extends BaseTest {
-
     /**
      * This test checks if the method 'isAllCharsAreUnique' works correctly
      */

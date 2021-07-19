@@ -2,7 +2,6 @@ package methods;
 
 import lombok.extern.log4j.Log4j2;
 import java.util.HashSet;
-import java.util.Locale;
 
 @Log4j2
 public class UniquenessOfChars {

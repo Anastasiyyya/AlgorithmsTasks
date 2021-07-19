@@ -7,7 +7,6 @@ import org.testng.annotations.BeforeMethod;
 
 
 public class BaseTest implements ITestConst {
-
     UniquenessOfChars uniquenessOfChars;
 
     @BeforeMethod
