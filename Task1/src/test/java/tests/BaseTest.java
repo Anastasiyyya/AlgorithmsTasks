@@ -11,7 +11,7 @@ public class BaseTest implements ITestConst {
     UniquenessOfChars uniquenessOfChars;
 
     @BeforeMethod
-    public void initPages(ITestContext context) {
+    public void initMethods(ITestContext context) {
         uniquenessOfChars = new UniquenessOfChars();
     }
 }

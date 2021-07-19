@@ -1,7 +1,6 @@
 package methods;
 
 import lombok.extern.log4j.Log4j2;
-
 import java.util.HashSet;
 import java.util.Locale;
 
@@ -12,17 +11,16 @@ public class UniquenessOfChars {
      * @param str
      * @return str or message 'String has non-unique chars'
      */
-    public String isAllCharsAreUnique(String str) {
-        str = str.toLowerCase(Locale.ROOT);
+    public boolean isAllCharsAreUnique(String str) {
         int count = 0;
         HashSet<Character> charsOfStr = new HashSet<>(str.length());
         for (int i = 0; i < str.length(); i++) {
             charsOfStr.add(str.charAt(i));
             count ++;
             if (count != charsOfStr.size()) {
-                return "String has non-unique chars";
+                return false;
             }
         }
-        return str;
+        return true;
     }
 }
