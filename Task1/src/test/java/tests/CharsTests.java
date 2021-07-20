@@ -28,26 +28,13 @@ public class CharsTests extends BaseTest {
         Assert.assertEquals(res, true);
     }
 
-    @Test(description = "Checking with user-entered string")
-    public void checkWithUserInputStringTest() {
-        try {
-            boolean resOfMethod = true;
-            resOfMethod = uniquenessOfChars.isAllCharsAreUnique(USER_INPUT);
-            if (!resOfMethod) {
-                Assert.assertEquals(resOfMethod, false);
-            } else {
-                Assert.assertEquals(resOfMethod, true);
-            }
-        } catch (NullPointerException ex){
-            log.info("Incorrect input");
-        }
-    }
-
     @DataProvider(name = "data")
     public Object[] inputForITechTask() {
         return new Object[][]{
                 {"123"},
-                {"string"}
+                {"string"},
+                {"+-апр"},
+                {"ванг"}
         };
     }
 
